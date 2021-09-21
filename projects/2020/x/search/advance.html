@@ -2,14 +2,61 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div>
-            <a href=index.html>Back</a>
+        <div id="top-right">
+            <a href="index.html">Back</a>
         </div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div id="form-label"> 
+            <label style="margin-left:10px">Advanced Search</label>
+        </div>
+        <div style="border-bottom: 1px solid"></div>
+        <div id="advanced-form">
+            <form action="https://google.com/search" method="GET" name="f">
+                <div class="left-right">
+                    <div class="left" style="font-size:15px">
+                        Find pages with...
+                    </div>
+                </div>
+                <div class="left-right">
+                    <div class="left">
+                        <label for="all-these-words">all these words:</label>
+                    </div>
+                    <div class="right">
+                        <input value="" autofocus="autofocus" id="all-these-words" name="as_q" type="text">
+                    </div>
+                </div>
+                <div class="left-right">
+                    <div class="left">
+                        <label for="this-exact-word">this exact word or phrase:</label>
+                    </div>
+                    <div class="right">
+                        <input value="" autofocus="autofocus" id="this-exact-word" name="as_epq" type="text">
+                    </div>
+                </div>
+                <div class="left-right">
+                    <div class="left">
+                        <label for="any-of-these-words">any of these words:</label>
+                    </div>
+                    <div class="right">
+                        <input value="" autofocus="autofocus" id="any-of-these-words" name="as_oq" type="text">
+                    </div>
+                </div>
+                <div class="left-right">
+                    <div class="left">
+                        <label for="none-of-these-words">none of these words:</label>
+                    </div>
+                    <div class="right">
+                        <input value="" autofocus="autofocus" id="none-of-these-words" name="as_eq" type="text">
+                    </div>
+                </div>
+                <input id="advanced-btn" type="submit" value="Advanced Search">
+            </form>
+        </div>
     </body>
 </html>
+
+<!--
+
+-->
