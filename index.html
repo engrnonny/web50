@@ -6,18 +6,29 @@
     </head>
     <body>
         <div id="top-right">
-            <a href=image.html>Images</a>
-            <a href=advance.html>Advanced</a>
+            <div>
+                <a href=image.html>Images</a>
+            </div>
+            <div>
+                <a href=advance.html>Advanced</a>
+            </div>
         </div>
         <div id="logo">
-            <img alt="Google" src="google_logo.png">
-        </div>
-        <form action="https://google.com/search">
-            <input type="text" name="q" id="search">
-            <div id="search-btns">
-                <input class="search-btn" type="submit" value="Google Search">                
+            <div>
+                <img alt="Google" src="google_logo.png">
             </div>
-        </form>
+        </div>
+        <div id="search-form">
+            <form action="https://google.com/search">
+                <div id="search-bar-btns">
+                    <input type="text" name="q" id="search">
+                    <div id="search-btns">
+                        <input class="search-btn" type="submit" value="Google Search">    
+                        <input class="search-btn" value="I'm Feeling Lucky" name="btnI" type="submit">            
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
 
